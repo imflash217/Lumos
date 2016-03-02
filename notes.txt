@@ -1,0 +1,133 @@
+********************** Abbreviations **********************
+DDoS : Distributed denial of Service
+
+500 error: The server hosting the web-page broke; the users cannot do anything to solve it.
+
+********************** Links ******************************
+http://techcrunch.com/gallery/google-alphabet/
+
+
+********************** Proxy Settings ******************************
+
+
+********************** Remote Access to SREEJESH'S machine ***********************
+scp ubuntu@10.249.32.136://home/ubuntu/Desktop/vinay/123.zip ./Desktop/3D-LearningSolutions/
+
+
+*********** UBUNTU/TERMINAL General Knowledge ********************
+1. Checking the size of files/folders via Terminal.
+   http://www.codecoffee.com/tipsforlinux/articles/22.html
+   ------------   
+   $ du ../folderPath
+   $ du -h 
+   $ du -a
+   $ du -ah
+   $ du -s
+---------------------------------------
+2. 
+********Compiling .java file from terminal in Ubuntu:*********
+http://askubuntu.com/questions/145748/how-to-compile-a-java-file
+
+   Step-1) javac filename.java
+   Step-2) java filename
+   
+********
+********Compiling .cpp file from terminal in Ubuntu:*********
+http://ubuntuforums.org/showthread.php?t=1836494
+http://stackoverflow.com/questions/221185/how-to-run-c-c-in-a-unix-console-mac-terminal
+
+   Step-1) g++ filename.cpp -o output_exe
+   Step-2) ./output_exe
+   
+***** compiling from inputfile.
+   Step-1) output_exe <infile >outfile
+   
+   
+********-------------- NOTES on Android/Android-Studio ------------------------
+Q) Error:Gradle 2.4 requires Java 6 or later to run. Your build is currently configured to use Java 5.
+A) https://discuss.gradle.org/t/error-gradle-2-2-1-requires-java-6-or-later-to-run-your-build-is-currently-configured-to-use-java-5/6382
+
+Q) Why is 'Up' button added by default once we define a parent activity; even without using setDisplayHomeAsUpEnabled() ?
+A) http://stackoverflow.com/questions/22812669/why-is-the-up-button-present-without-setdisplayhomeasupenabled
+
+Q) No App Icon on ActionBar
+A) http://stackoverflow.com/questions/26720759/no-app-icon-on-actionbar
+
+Q) .apk file location in Android Studio using Gradle project
+A) In AndroidStudio1.3.2 the .apk file is loacted (..../app/build/outputs/apk)
+
+Q) Including OpenCV in Android Studio Project.
+A) http://stackoverflow.com/questions/17767557/how-to-use-opencv-in-android-studio-using-gradle-build-tool/27356635#27356635
+
+Q) Error: "ArrayAdapter requires the resource ID to be a TextView"
+A) http://stackoverflow.com/questions/9280965/arrayadapter-requires-the-resource-id-to-be-a-textview-xml-problems
+
+Q) Error: getSupportActionBar().setDisplayHomeAsUpEnabled(true) can give NullPointerException.
+A) Add following code-line before getSupport....(true) :
+       assert setSupportActionBar != null;
+      
+Q) Error: NullPointerException while using findViewById.
+A) Make sure the R.id.* that you are calling lies inside the layout file used in setContentView().
+   http://stackoverflow.com/questions/32560646/java-lang-nullpointerexception-when-cast-textview
+   
+Q) Issue: How to set resource to an imageView using 'File' object.
+A) Try getting 'Uri' object from the Fil object:
+   http://stackoverflow.com/questions/15814638/how-to-set-an-image-to-imageview-using-filepath-in-android   
+   
+Q) Issue: OpenCV Intent must be Explicit: 
+   ERROR: java.lang.IllegalArgumentException: Service Intent must be explicit: Intent { act=org.opencv.engine.BIND }
+A) Set OpenCV Package for the AsyncServiceHelper @ src/main/java/org/opencv/android/AsyncServiceHelper.java:initOpenCV(){}
+   http://stackoverflow.com/questions/27470313/opencv-service-intent-must-be-explicit-android-5-0-lolipop
+
+Q) Issue: COnverting a Bitmap to Opencv's Mat[] in android.
+A) Import org.opencv.android.Utils;
+   Use Utils.bitmaptoMat() function.
+
+
+
+
+
+********-------------- NOTES on C++ ------------------------
+01. If we subtract a value from 'unsigned' we must be sure that the result CANNOT be negative; 
+   otherwise the resukt will be wraped.
+02. Literal = 'fixed value in source code'
+03. 'Integer Literals' can be written in decimal, octal, hexadecimal notation.
+04. Integer literals that begin with 0 are interpreted as OCTAL (eg. 024)
+05. Integer literals that begin with 0x, 0X are interpreted as HEXADECIMAL (eg. 0x24)
+06. 'Decimal-literals' are SIGNED.
+07. Octal/Hexadecimal-literals can either be SIGNED or UNSIGNED.
+08. There are no literals of type 'short'.
+09. Floating-point literals include either a decimal point or exponent specified using Scientific-Notation.
+10. By Default; floating-point literals have type 'double'.
+11. 'a' = character-literal.
+12. "Hello World" = string-literal.
+13. The words 'true' and 'false' are literals of type 'bool'.
+14. The word 'nullptr' is a pointer literal.
+15. 'Initialization' and 'Assignment' are different operations in C++.
+    Initialization happens when a variable is given a value when it is created.
+    Assignment destroys an object's current value and replaces it with the new one.
+16. Variables defined outside any function body are initialized to 'zero'.
+17. Variables defined inside a function body are 'uninitialized';(with one exception).
+18. The value of an uninitialized variable is 'undefined'.
+19. It is recommended to initialize object of every built-in type.
+20. To obtain a 'declaration' that is NOT a 'definition', we add 'extern' keyword
+      extern int a;  // declares but doesn't define.
+      int a          // declares and defines.
+      
+      If we initialize a name and also add extern keyword; then the 'extern' is overwritten.
+      extern int a = 99; // declares and defines.
+      
+      ERROR: Donot initialize on an 'extern' keyword.
+
+21. Variables MUST be 'Defined' exactly ONCE; but can be 'Declared' many times.
+22. C++ is a 'statically-typed' language i.e. the 'type' are checked at the COMPILE TIME.
+23. In C++; the COMPILER checks whether the operation we write are supported by the 'type' or not.
+
+24. COMPOUND TYPE: A 'type' defined in terms of another 'type'. For eg: references & pointers
+25. REFERENCES: When we create a reference, we blind the reference to its initializer, insted of copying its the value of initializer.
+      
+   A 'reference' is NOT an 'object'; its just another name of an already existing 'object'.
+   Because references are NOT objects, so we cannot DEFINE a reference with another reference.
+   Each 'identifier' that is a reference must be preceded by '&' symbol.
+
+26. 
