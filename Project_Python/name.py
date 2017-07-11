@@ -6,6 +6,7 @@
 The function in this module has a bug (in the sense that it does not satisfy
 its specification). This allows us to show off debugging."""
 
+
 def last_name_first(n):
     """Returns: copy of n but in the form 'last-name, first-name'
     
