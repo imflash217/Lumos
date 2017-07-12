@@ -191,10 +191,13 @@ def func_add_one(thelist):
     :param thelist: a <list> of integer values
     :return: add 1 to every integer in the <list> and returns the <list>
     """
+    myCopy = [] # the accumulator
     for x in thelist:
         x += 1
-    return thelist
+        myCopy.append(x)    # Appending the incremented value to the copy list
+    return myCopy
 
+print func_add_one([1,2,3,4,5])
 
 
 
