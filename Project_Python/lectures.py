@@ -191,15 +191,21 @@ def func_add_one(thelist):
     :param thelist: a <list> of integer values
     :return: add 1 to every integer in the <list> and returns the <list>
     """
-    myCopy = [] # the accumulator
-    for x in thelist:
-        x += 1
-        myCopy.append(x)    # Appending the incremented value to the copy list
-    return myCopy
+    # myCopy = [] # the accumulator
+    size = len(thelist)
 
-print func_add_one([1,2,3,4,5])
+    for x in range(size):
+        # x += 1
+        # myCopy.append(x)    # Appending the incremented value to the copy list
+        thelist[x] += 1
+    # return myCopy
+    return thelist
 
+print func_add_one([1,31,4,5])
 
+# Range() function:
+#       * range(x): Returns a list of integers from 0 to x-1
+#       * range(a,b) : Returns the list of integers from a to b-1
 
 
 
