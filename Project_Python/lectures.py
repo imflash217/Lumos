@@ -284,3 +284,38 @@ def func_num_es(m_string):
     return m_left_part + m_right_part
 
 print func_num_es('My name is Rustom Potter!')
+
+###################################################################
+# Lecture 16:
+
+
+def func_is_palindrome(m_string):
+    if len(m_string) < 2:
+        return True
+
+    ends = (m_string[0] == m_string[-1])
+    middle = func_is_palindrome(m_string[1:-1])
+
+    return (ends and middle)
+
+print func_is_palindrome('Rustom Potter')
+print func_is_palindrome('abba')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
