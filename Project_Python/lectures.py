@@ -249,7 +249,38 @@ def func_transpose(table):
 print func_transpose([[1, 2],[3, 4], [5, 6], [7, 8]])
 
 
+###################################################################
+# Lecture 15:
+
+# Fibonacci sequence
+
+def func_fibonacci(n):
+    if n <= 1:
+        return 1
+    return (func_fibonacci(n-1) + func_fibonacci(n-2))
 
 
+print func_fibonacci(-1)
+
+# Divide and Conquer
 
 
+def func_num_es(m_string):
+    """
+    :param m_string: a string
+    :return: the number of 'e's in the string
+    """
+    # Handle small data
+    if m_string == '':
+        return 0
+    elif len(m_string) == 1:
+        return 1 if m_string[0] == 'e' else 0
+
+    # Break into two parts
+    m_left_part = func_num_es(m_string[0])
+    m_right_part = func_num_es(m_string[1:])
+
+    # Combine the results
+    return m_left_part + m_right_part
+
+print func_num_es('My name is Rustom Potter!')
