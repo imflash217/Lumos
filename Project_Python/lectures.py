@@ -208,9 +208,45 @@ print func_add_one([1,31,4,5])
 #       * range(a,b) : Returns the list of integers from a to b-1
 
 
+###################################################################
+# Lecture 14
+# <list> can hold any <object>
+# <list> themselves are <object>, so a <list> can hold other <list>
+
+list_a = [1, 2]
+list_b = [4, 8, 9]
+list_c = [10, 21, list_b, 52]
+list_x = [list_a, list_b, list_c]
+
+print list_b
+print list_b
+print list_c
+print list_x
+
+# Ragged lists : Rows w/ different length
+
+# Data Wrangling: Transpose (converting rows to columns & vice-versa)
 
 
+def func_transpose(table):
+    """
 
+    :param table: a non-ragged 2D <list>
+    :return: returns a copy of table with rows and columns swapped
+    """
+
+    no_rows = len(table)
+    no_cols = len(table[0]) # All rows have same no of columns in a non-ragged 2D list
+    result = []     # Accumulator
+
+    for m in range(no_cols):
+        row = []    # Row accumulator, stores elements of the new row
+        for n in range(no_rows):
+            row.append(table[n][m])     # appends the col elements of previous table as rows of new table
+        result.append(row)      # Add the new row into the resultant table
+    return result
+
+print func_transpose([[1, 2],[3, 4], [5, 6], [7, 8]])
 
 
 
