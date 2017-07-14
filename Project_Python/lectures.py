@@ -330,8 +330,10 @@ print repr('Rustom Potter')
 class Fraction(object):
 
     def __init__(self, n=0, d=1):
-        self.numerator = n
-        self.denominator = d
+        self._numerator = n
+        self._denominator = d
+        self.numerator = self._numerator
+        self.denominator = self._denominator
         # return '{m_num}/{m_deno}'.format(m_num=self.numerator, m_deno=self.denominator)
 
     def __add__(self, other):
@@ -346,6 +348,23 @@ class Fraction(object):
         bottom = self.denominator * other.denominator
         return Fraction(top, bottom)
 
+    def get_numerator(self):
+        return self._numerator
+
+    def get_denominator(self):
+        return self._denominator
+
+    def set_numerator(self, n):
+        assert type(n) == int
+        self.numerator = n          # Works fine
+        # self._numerator = n       # Doesn't change the values
+
+    def set_denominator(self, d):
+        assert type(d) == int
+        if d > 0:
+            self.denominator = d    # Works fine
+            # self._denominator = d # Doesn't change the values
+
 
 a = Fraction(1,2)
 b = Fraction(3,4)
@@ -354,9 +373,19 @@ c = Fraction(9,7)
 print (a+b*c).numerator
 print (a+b*c).denominator
 
+print (a+b*c).get_numerator()
+print (a+b*c).get_denominator()
+
+(c).set_numerator(100)
+(c).set_denominator(111)
 
 
+print (a+b*c).get_numerator()
+print (a+b*c).get_denominator()
 
+
+###################################################################
+# Lecture 19:
 
 
 
