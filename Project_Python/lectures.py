@@ -302,12 +302,57 @@ print func_is_palindrome('Rustom Potter')
 print func_is_palindrome('abba')
 
 
+###################################################################
+# Lecture 18:
+
+class Point3(object):
+    def __init__(self, x=0, y=0, z=0):
+        self.x = x
+        self.y = y
+        self.z = z
+
+    def __str__(self):
+        return '( {m_x}, {m_y}, {m_z})'.format(m_x=self.x, m_y=self.y, m_z=self.z)
+
+    def __repr__(self):
+        return str(self.__class__) + str(self)
 
 
+p = Point3()
+p2 = Point3()
+print p, p2     # Prints in the same line
+print (str(p))  # str() function
+print repr(p)       # repr() function or Backquotes
+print str('Rustom Potter')
+print repr('Rustom Potter')
 
 
+class Fraction(object):
+
+    def __init__(self, n=0, d=1):
+        self.numerator = n
+        self.denominator = d
+        # return '{m_num}/{m_deno}'.format(m_num=self.numerator, m_deno=self.denominator)
+
+    def __add__(self, other):
+        assert type(other) == Fraction
+        top = (self.numerator * other.denominator) + (self.denominator * other.numerator)
+        bottom = self.denominator * other.denominator
+        return Fraction(top, bottom)
+
+    def __mul__(self, other):
+        assert type(other) == Fraction
+        top = self.numerator * other.numerator
+        bottom = self.denominator * other.denominator
+        return Fraction(top, bottom)
 
 
+a = Fraction(1,2)
+b = Fraction(3,4)
+c = Fraction(9,7)
+
+print (a+b*c).numerator
+print (a+b*c).denominator
 
 
 
