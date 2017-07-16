@@ -413,5 +413,31 @@ print a.g()
 print b.g()     # function calls are always carried in bottom-to-up approach
 
 
+class Employee(object):
+    """An employee with salary"""
 
+    # Class Attribute
+    STD_SALARY = 100000
+
+    def __init__(self, n, d, s=100000.0):
+        self._name = n
+        self._start = d
+        self._salary = s
+
+    def __str__(self):
+        return 'Name: {m_name}, Start: {m_start}, Salary: {m_salary}'.format(m_name=self._name, m_start=self._start, m_salary=self._salary)
+
+
+class Executive(Employee):
+    """ An employee/executive with bonus"""
+
+    # Class Attribute
+    STD_BONUS = 25000
+
+    def __init__(self, n, d, b=0.0):
+        Employee.__init__(self,n,d)
+        self._bonus = b
+
+    def __str__(self):
+        return Employee.__str__(self) + 'bonus' + str(self._bonus)
 
