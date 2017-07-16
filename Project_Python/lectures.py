@@ -389,6 +389,9 @@ print (a+b*c).get_denominator()
 # Name Resolution and Inheritance
 
 class A(object):
+    x = 1   # Class variable
+    y = 2   # Class variable
+
     def f(self):
         return self.g()
 
@@ -397,6 +400,8 @@ class A(object):
 
 
 class B(A):
+    y = 3   # Class variable
+    z = 4   # Class variable
     def g(self):
         return 14
 
@@ -411,6 +416,9 @@ print a.f()
 print b.f()     # function calls are always carried in bottom-to-up approach
 print a.g()
 print b.g()     # function calls are always carried in bottom-to-up approach
+print b.x       # Refers to class A's x
+print b.y       # Refers to class B's y
+# print a.z       # Error: vaiable 'z' is not defined in the scope of class A
 
 
 class Employee(object):
