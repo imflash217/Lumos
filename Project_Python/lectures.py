@@ -386,9 +386,31 @@ print (a+b*c).get_denominator()
 
 ###################################################################
 # Lecture 19:
+# Name Resolution and Inheritance
+
+class A(object):
+    def f(self):
+        return self.g()
+
+    def g(self):
+        return 10
 
 
+class B(A):
+    def g(self):
+        return 14
 
+    def h(self):
+        return 20
+
+
+a = A()
+b = B()
+
+print a.f()
+print b.f()     # function calls are always carried in bottom-to-up approach
+print a.g()
+print b.g()     # function calls are always carried in bottom-to-up approach
 
 
 
