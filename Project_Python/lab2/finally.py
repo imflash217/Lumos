@@ -10,8 +10,10 @@ import greetings
 print  # print some blank lines to make output easier to see
 print 
 output = greetings.natural_hi()
+print(output)
+
 if output is not None and output.startswith("hi "):
-    print output
-    print "Congratulations on completing your first program for CS1110!!"
+    print (output)
+    print ("Congratulations on completing your first program for CS1110!!")
 else:
-    print "It seems that you haven't successfully completed the lab yet."
+    print ("It seems that you haven't successfully completed the lab yet.")

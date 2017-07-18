@@ -9,6 +9,6 @@ import greetings
 
 my_name = "CS1110 student"
 
-print greetings.rand_hi(my_name)
-print greetings.rand_hi(my_name)
-print greetings.rand_hi(my_name)
+print (greetings.rand_hi(my_name))
+print (greetings.rand_hi(my_name))
+print (greetings.rand_hi(my_name))
