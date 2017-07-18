@@ -45,12 +45,12 @@ for f in filesnames:
 
 if all(test_results):
 
-    print
-    print "The command shell's working directory contains the files for this lab."
-    print "Hurrah!"
+    print()
+    print ('The command shell\'s working directory contains the files for this lab.')
+    print ("Hurrah!")
 
 else:
-    print "Something is wrong: please ask a staff member for help."""
-    print "Diagnostic info: "
+    print ("Something is wrong: please ask a staff member for help.""")
+    print ("Diagnostic info: ")
     for i in range(len(filesnames)):
-        print filesnames[i] + ": " + ("found" if test_results[i] else "not found")
+        print (filesnames[i] + ": " + ("found" if test_results[i] else "not found"))
