@@ -59,13 +59,13 @@ def quit_with_error(msg):
     what is going on in the error message. This makes the error clear and concise"""
     stack = traceback.extract_stack()
     frame = stack[-3]
-    print (msg)
+    print msg
     if (frame[3] is None):
         suffix = ''
     else:
         suffix = ": "+frame[3]
-    print ('Line '+repr(frame[1])+' of '+ frame[0] + suffix)
-    print ('Quitting with Error')
+    print 'Line '+repr(frame[1])+' of '+ frame[0] + suffix
+    print 'Quitting with Error'
     quit()
 
 

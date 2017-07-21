@@ -37,8 +37,8 @@ def function_2(x,y):
 def function_3(x,y):
     return x/y
 
-print function_1(12,3)
-print function_1(1,0) # crashes here
+print (function_1(12,3))
+print (function_1(1,0)) # crashes here
 
 
 def exchange(from_c, to_c, amt):
@@ -65,33 +65,33 @@ def is_float(m_string):
 
 
 def func_first(m_x):
-    print 'Starting func_first()'
+    print ('Starting func_first()')
     try:
         func_second(m_x)
     except:
-        print 'Caught at func_first()'
-    print 'Ending func_first()'
+        print ('Caught at func_first()')
+    print ('Ending func_first()')
 
 
 def func_second(m_x):
-    print 'Starting func_second()'
+    print ('Starting func_second()')
     try:
         func_third(m_x)
     except:
-        print 'Caught at func_second()'
-    print 'Ending func_second()'
+        print ('Caught at func_second()')
+    print ('Ending func_second()')
 
 
 def func_third(m_x):
-    print 'Starting func_third()'
+    print ('Starting func_third()')
     assert m_x < 0
-    print 'Ending func_third()'
+    print ('Ending func_third()')
 
 
 func_first(1)
-print '\n'
+print ('\n')
 func_first(-1)
-print '\n'
+print ('\n')
 
 ###################################################################
 # Lecture 10:
