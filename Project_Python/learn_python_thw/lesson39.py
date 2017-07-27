@@ -1,3 +1,5 @@
+from collections import OrderedDict
+
 # Create a mapping of state to abbreviation
 states = {
 	'Oregon' : 'OR',
@@ -64,4 +66,31 @@ if not m_state:
 m_city = cities.get('TX', 'Does\'nt exist.')
 print 'The city for state \'TX\' is %r' % m_city
 
+############################################################
 
+# Regular unsorted dictionary
+d = {
+	'banana': 3,
+	'apple': 1,
+	'pomogranate': 4,
+	'fig': 0,
+	'grapes': 2
+}
+
+# dictionary sorted by keys (here in alphabetical order)
+d_ordered_key = OrderedDict(sorted(d.items(), key = lambda t:t[0]))
+print d_ordered_key
+
+# dictionary sorted by value
+d_ordered_value = OrderedDict(sorted(d.items(), key = lambda t:t[1]))
+print d_ordered_value
+
+# Dictionary sorted by length of key string
+d_ordered_keylength = OrderedDict(sorted(d.items(), key = lambda t:len(t[0])))
+print d_ordered_keylength
+
+
+# # Dictionary sorted by length of value 		# ERROR as 'int' type has not len() method
+# 
+# d_ordered_valuelength = OrderedDict(sorted(d.items(), key = lambda t:len(t[1])))
+# print d_ordered_valuelength
