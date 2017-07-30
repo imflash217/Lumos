@@ -21,9 +21,11 @@ if len(sys.argv) == 2 and sys.argv[1] == 'english':
 # load up the words from the website
 
 for word in urlopen(WORD_URL).readlines():
-	WORDS.append(word.strip())
+	WORDS.append(word.strip())		# strip() removes starting and ending whitespaces from strings
 
 def convert(snippet, phrase):
+	# .capitalize() 		: it capitalizes the string
+	# random.sample(a, b)	: picks a random group of size 'b' from 'a'
 	class_names = [w.capitalize() for w in random.sample(WORDS, snippet.count('$$$'))]
 	other_names = random.sample(WORDS, snippet.count('***'))
 	
@@ -31,13 +33,15 @@ def convert(snippet, phrase):
 	param_names = []
 
 	for i in range(0, snippet.count('@@@')):
-		param_count = random.randint(1,3)
+		param_count = random.randint(1,3)		# 3 b'coz we have class, other & parameter
+		print param_count
 		param_names.append(', '.join(random.sample(WORDS, param_count)))
+		print param_names
 
 	for sentence in snippet, phrase:
 		result = sentence[:]
 
-		#fake class names
+		# fake class names
 		for word in class_names:
 			result = result.replace('$$$', word, 1)
 
