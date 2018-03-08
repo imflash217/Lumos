@@ -34,4 +34,18 @@
 #5 Assigning single value to several variables instantenously
 	a = b = c = 2.17
 
-#6 
+#6 Viewing the list of outdated packages:
+#  $ pip list --outdated
+
+#7 Upgrade a specific package:
+#  $ pip install [package_name] --upgrade
+
+#8 
+
+
+
+
+
+
+
+
