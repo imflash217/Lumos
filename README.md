@@ -39,16 +39,16 @@
 yield x 				# Generator function send protocol
 lambda args : expression 		# Anonymous function generation
 
-x if y else z			# Ternary selection (x is evaluated only if y is True)
+x if y else z				# Ternary selection (x is evaluated only if y is True)
 
-x or y 				# Logical OR (y is evaluated only if x is False)
-x and y 			# Logical AND (y is evaluated only if x is True)
-not x 				# Logical Negation
+x or y 					# Logical OR (y is evaluated only if x is False)
+x and y 				# Logical AND (y is evaluated only if x is True)
+not x 					# Logical Negation
 
-x in y 				# Membership (iterables, sets)
+x in y 					# Membership (iterables, sets)
 x not in y 				# Membership (iterables, sets)
 
-x is y 				# Object identity tests
+x is y 					# Object identity tests
 x is not y 				# Object identity test
 
 ```
