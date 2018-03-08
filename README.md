@@ -37,6 +37,7 @@
 # Python Expression Operators and Precedence
 
 yield x 	# Generator function send protocol
+lambda args : expression 	# Anonymous function generation
 
 ```
 
