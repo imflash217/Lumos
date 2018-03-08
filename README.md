@@ -18,5 +18,25 @@
 
 * **Mutable Objects** : `lists`, `dictionaries`, `sets`.
 
+### Numeric Literals:
 
+* In **Python 2.X** :
+	* Two `integer` types : 
+		* `normal`	: 32 bits
+		* `long`	: unlimited precison
+	* Python automatically converts up to `long` integer type when extra precision is needed
+
+* In **Python 3.X** : 
+	* Only 1 `integer` type: unlimited precision
+
+* `is` operator tests object identity (i.e. address in memory)
+
+* `lambda` creates un-named functions.
+
+``` Python
+# Python Expression Operators and Precedence
+
+yield x 	# Generator function send protocol
+
+```
 
