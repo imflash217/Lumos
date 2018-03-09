@@ -61,4 +61,14 @@ x is not y 			# Object identity test
 	* Variables must be assigned before they can be used in expressions
 	* **Variables refer to objects and are never declared ahead of time**
 
+* `Classic Division ( X / Y )` : In `Python 2.X`, Truncating results for `integers` and keeping the remainders (i.e. fractional parts) for the `floating-point numbers`
+
+* `True Division ( X / Y )` : In `Python 3.X`, ALWAYS keeping remainders in floating-point results regardless of the types.
+
+* `Floor Division ( X // Y )` : In `Python 2.X & 3.X`, Always truncates fractional remainders down to their floors regardless of the types. Its result type depends on the type of its operands
+
+
+
+
+
 
