@@ -67,7 +67,9 @@ x is not y 			# Object identity test
 
 * `Floor Division ( X // Y )` : In `Python 2.X & 3.X`, Always truncates fractional remainders down to their floors regardless of the types. Its result type depends on the type of its operands
 
+* `Decimal` are _fixed-precision_ floating point values
 
+* 
 
 
 
