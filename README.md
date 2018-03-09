@@ -51,7 +51,14 @@ x not in y 			# Membership (iterables, sets)
 x is y 				# Object identity tests
 x is not y 			# Object identity test
 
-
-
 ```
+
+* `Polymorphism` : Meaning of an operation depends on the type of the `object` being operated on.
+
+* **Variables** : 
+	* Variables are created when they are first assigned values
+	* Variables are replaced with values when they are first used in expressions
+	* Variables must be assigned before they can be used in expressions
+	* **Variables refer to objects and are never declared ahead of time**
+
 
