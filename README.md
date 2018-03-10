@@ -33,7 +33,7 @@
 
 * `lambda` creates un-named functions.
 
-``` Python
+```python
 # Python Expression Operators and Precedence
 
 yield x 			# Generator function send protocol
@@ -69,7 +69,28 @@ x is not y 			# Object identity test
 
 * `Decimal` are _fixed-precision_ floating point values
 
-* 
+* For optimization, Python internally _caches_ and reuses certain kinds f unchangeable objects, such as small integers and strings.
+
+* Each `object` has two standard header fields : 1. `type designator` & 2. `reference counter`.
+
+* Names have no types. Types live with `objects` not names.
+
+* `object` know what they are; each object contains a header field (refernece counter) that points to the `type` of the object. B'coz objects know what type they are, variables don't have to. Variables just point to the objects.
+
+```python
+import copy
+X1 = copy.copy(Y)			# Makes top-level "shallow" copy of the object Y
+X2 = copy.deepcopy(Y)		# MAkes deep-copy of the object Y : copies all nested parts
+
+
+X == Y 				# tests whether the values in objects referenced by X, Y are same or not
+X is Y 				# tests whether the objects(not just values) referenced by X, Y are same or not
+
+```
+
+* `weakref` : Weak-refernce is a reference to an object that doesnot by itself prevent the object from **garbage collected**. If the last remaining reference to an object are weak-reference then the object is automatically garbage collected and the weak-references are deleted (or otherwise notified).
+
+
 
 
 
