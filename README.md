@@ -79,7 +79,7 @@ x is not y 			# Object identity test
 
 ```python
 import copy
-X1 = copy.copy(Y)			# Makes top-level "shallow" copy of the object Y
+X1 = copy.copy(Y)		# Makes top-level "shallow" copy of the object Y
 X2 = copy.deepcopy(Y)		# MAkes deep-copy of the object Y : copies all nested parts
 
 
@@ -90,8 +90,26 @@ X is Y 				# tests whether the objects(not just values) referenced by X, Y are s
 
 * `weakref` : Weak-refernce is a reference to an object that doesnot by itself prevent the object from **garbage collected**. If the last remaining reference to an object are weak-reference then the object is automatically garbage collected and the weak-references are deleted (or otherwise notified).
 
+* Python's `string` serve the same role as character-arrays in languages like C/C++, but they 
 
+* Objects that are `iterable` return results one at a time, not in a physical list.
 
+* `List comprehension` is not the same as `for` loops because it makes new list object.
 
+* `List comprehensions` run much faster than equivalent `for` loop statements b'coz their iterations are performed at `C`-language speed inside the interpreter rather than with manual python code.
+
+* `readlines()` method loads the `file` object into a list of line strings all at once.
+
+* Any tool that employs the iteration protocol will automatically work on any built-in type or user-defined class that provides it.
+
+* Every built-in tool that scans from left-to-right across objects, uses the iteration protocol.
+
+* `sorted`		: sorts items in an iterable. It returns an actual `list` instead of an iterable (in 3.X)
+* `zip`			: combines items from iterable
+* `enumerate`	: pairs items in an iterable with their relative positions
+* `filter`		: selects items for which a function is `True`
+* `reduce`		: runs pair of items in an iterable through a function
+
+* 
 
 
