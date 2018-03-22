@@ -121,8 +121,25 @@ A = zip(*zip(X,Y))		# unzip a zip
 	* Unicode model
 	* 3.x's mandated new-style classes
 
-|.|.| Column 1 |.|
-| a | b | haha |.|
-
-
-
+<table>
+<tr>
+<th> Server
+<th> IP
+<th> Description
+<tr>
+<td> cl1
+<td> 192.168.100.1
+<td> This is my first server in the list
+<tr>
+<td> cl2
+<td> 10.10.1.22
+<td> This is another one server
+<tr>
+<td> windows-5BSD567DSLOS
+<td> 127.0.0.12
+<td> This is customer windows vm. dont touch this!
+<tr>
+<td> DFHSDDFFUCKENLONGNAME
+<td> 192.168.1.50
+<td> Some printer
+</table>
