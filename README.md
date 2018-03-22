@@ -104,11 +104,22 @@ X is Y 				# tests whether the objects(not just values) referenced by X, Y are s
 
 * Every built-in tool that scans from left-to-right across objects, uses the iteration protocol.
 
-* `sorted`		: sorts items in an iterable. It returns an actual `list` instead of an iterable (in 3.X)
-* `zip`			: combines items from iterable
-* `enumerate`	: pairs items in an iterable with their relative positions
-* `filter`		: selects items for which a function is `True`
-* `reduce`		: runs pair of items in an iterable through a function
+| Command | Deatils | `return` value |
+|--- | --- | --- |
+| `sorted` | sorts items in an iterable | It returns an actual `list` instead of an iterable (in 3.X)
+| `zip` | combines items from iterable | Returns iterable objects (in 3.X).
+* `enumerate`	: pairs items in an iterable with their relative positions. Returns iterable objects (in 3.X).
+* `filter`		: selects items for which a function is `True`. Returns iterable objects (in 3.X).
+* `reduce`		: runs pair of items in an iterable through a function. Returns iterable objects (in 3.X).
+
+```python
+A = zip(*zip(X,Y))		# unzip a zip
+```
+
+* Fundamental changes in 3.X than in 2.X :
+	* 3.X puts stronger emphasis on `iterators`
+	* Unicode model
+	* 3.x's mandated new-style classes
 
 * 
 
