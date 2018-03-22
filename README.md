@@ -104,13 +104,13 @@ X is Y 				# tests whether the objects(not just values) referenced by X, Y are s
 
 * Every built-in tool that scans from left-to-right across objects, uses the iteration protocol.
 
-| Command | Deatils | `return` value |
+| Command | Details | `return` value |
 |--- | --- | --- |
-| `sorted` | sorts items in an iterable | It returns an actual `list` instead of an iterable (in 3.X)
-| `zip` | combines items from iterable | Returns iterable objects (in 3.X).
-* `enumerate`	: pairs items in an iterable with their relative positions. Returns iterable objects (in 3.X).
-* `filter`		: selects items for which a function is `True`. Returns iterable objects (in 3.X).
-* `reduce`		: runs pair of items in an iterable through a function. Returns iterable objects (in 3.X).
+| `sorted` | Sorts items in an iterable | An actual `list` instead of an iterable (in 3.X)
+| `zip` | Combines items from iterable | Iterable objects (in 3.X).
+| `enumerate` | Pairs items in an iterable with their relative positions | Iterable objects (in 3.X).
+| `filter` | Selects items for which a function is `True` | Iterable objects (in 3.X).
+| `reduce` | Runs pair of items in an iterable through a function | Iterable objects (in 3.X).
 
 ```python
 A = zip(*zip(X,Y))		# unzip a zip
