@@ -122,6 +122,7 @@ A = zip(*zip(X,Y))		# unzip a zip
 	* 3.x's mandated new-style classes
 
 |             |          Grouping           ||
+| --- | --- ||
 First Header  | Second Header | Third Header |
  ------------ | :-----------: | -----------: |
 Content       |          *Long Cell*        ||
