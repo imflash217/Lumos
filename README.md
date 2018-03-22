@@ -106,11 +106,11 @@ X is Y 				# tests whether the objects(not just values) referenced by X, Y are s
 
 | Command | Details | `return` value |
 |--- | --- | --- |
-| `sorted` | Sorts items in an iterable | <ul><li>**3.X**: An actual `list`</li></ul>
-| `zip` | Combines items from iterable | Iterable objects (in 3.X).
-| `enumerate` | Pairs items in an iterable with their relative positions | Iterable objects (in 3.X).
-| `filter` | Selects items for which a function is `True` | Iterable objects (in 3.X).
-| `reduce` | Runs pair of items in an iterable through a function | Iterable objects (in 3.X).
+| `sorted` | Sorts items in an iterable | <ul><li>**3.X**: An actual `list` </li></ul>
+| `zip` | Combines items from iterable | <ul><li>**3.X**: Iterable objects </li></ul>
+| `enumerate` | Pairs items in an iterable with their relative positions | <ul><li>**3.X**: Iterable objects </li></ul>
+| `filter` | Selects items for which a function is `True` | <ul><li>**3.X**: Iterable objects </li></ul>
+| `reduce` | Runs pair of items in an iterable through a function | <ul><li>**3.X**: Iterable objects </li></ul>
 
 ```python
 A = zip(*zip(X,Y))		# unzip a zip
