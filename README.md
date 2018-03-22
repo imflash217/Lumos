@@ -138,7 +138,7 @@ A = zip(*zip(X,Y))		# unzip a zip
 		<td>---</td>
 		<td>---</td>
 		<td>Sorts items in an iterable </td>
-		<td> An actual `list`</td>
+		<td markdown="1"> An actual `list`</td>
 	</tr>
 </table>
 
