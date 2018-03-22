@@ -106,7 +106,7 @@ X is Y 				# tests whether the objects(not just values) referenced by X, Y are s
 
 | Command | Details | `return` value |
 |--- | --- | --- |
-| `sorted` | Sorts items in an iterable | <ul><li>An actual `list`(in 3.X)</li><li>2.X:jdfjdhjhjh</li></ul>
+| `sorted` | Sorts items in an iterable | <ul><li>**3.X**: An actual `list`</li></ul>
 | `zip` | Combines items from iterable | Iterable objects (in 3.X).
 | `enumerate` | Pairs items in an iterable with their relative positions | Iterable objects (in 3.X).
 | `filter` | Selects items for which a function is `True` | Iterable objects (in 3.X).
@@ -120,52 +120,4 @@ A = zip(*zip(X,Y))		# unzip a zip
 	* 3.X puts stronger emphasis on `iterators`
 	* Unicode model
 	* 3.x's mandated new-style classes
-<table>
-	<tr>
-		<th>commands</th>
-		<th colspan="2">Python 2.X</th>
-		<th colspan="2">Python 3.X</th>
-	</tr>
-	<tr>
-		<th></th>
-		<th>Details</th>
-		<th>`return` value</th>
-		<th>Details</th>
-		<th>`return` value</th>
-	</tr>
-	<tr>
-		<td>sorted</td>
-		<td>---</td>
-		<td>---</td>
-		<td>Sorts items in an iterable </td>
-		<td markdown="1"> An actual `list`</td>
-	</tr>
-</table>
 
-
-
-<table>
-<tr>
-<th> Server
-<th colspan = "2"> IP
-<tr>
-<th> Server
-<th> IP
-<th> Description
-<tr>
-<td> cl1
-<td> 192.168.100.1
-<td> This is my first server in the list
-<tr>
-<td> cl2
-<td> 10.10.1.22
-<td> This is another one server
-<tr>
-<td> windows-5BSD567DSLOS
-<td> 127.0.0.12
-<td> This is customer windows vm. dont touch this!
-<tr>
-<td> DFHSDDFFUCKENLONGNAME
-<td> 192.168.1.50
-<td> Some printer
-</table>
