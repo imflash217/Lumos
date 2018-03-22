@@ -121,7 +121,7 @@ A = zip(*zip(X,Y))		# unzip a zip
 	* Unicode model
 	* 3.x's mandated new-style classes
 
-|A|B|C|
+|A|B|C|D|
 | --- | --- |---|
 First Header  | Second Header | Third Header |
 Content|*Long Cell*||
