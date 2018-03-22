@@ -133,6 +133,13 @@ A = zip(*zip(X,Y))		# unzip a zip
 		<th>Details</th>
 		<th>`return` value</th>
 	</tr>
+	<tr>
+		<td>sorted</td>
+		<td>---</td>
+		<td>---</td>
+		<td>Sorts items in an iterable </td>
+		<td> An actual `list`</td>
+	</tr>
 </table>
 
 
