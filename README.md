@@ -120,6 +120,22 @@ A = zip(*zip(X,Y))		# unzip a zip
 	* 3.X puts stronger emphasis on `iterators`
 	* Unicode model
 	* 3.x's mandated new-style classes
+<table>
+	<tr>
+		<th>commands</th>
+		<th colspan="2">Python 2.X</th>
+		<th colspan="2">Python 3.X</th>
+	</tr>
+	<tr>
+		<th></th>
+		<th>Details</th>
+		<th>`return` value</th>
+		<th>Details</th>
+		<th>`return` value</th>
+	</tr>
+</table>
+
+
 
 <table>
 <tr>
