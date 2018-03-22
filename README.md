@@ -106,8 +106,7 @@ X is Y 				# tests whether the objects(not just values) referenced by X, Y are s
 
 | Command | Details | `return` value |
 |--- | --- | --- |
-| `sorted` | Sorts items in an iterable | * 3.X : An actual `list`(in 3.X)
-* 2.X fbghbgbfdn
+| `sorted` | Sorts items in an iterable | An actual `list`(in 3.X)
 | `zip` | Combines items from iterable | Iterable objects (in 3.X).
 | `enumerate` | Pairs items in an iterable with their relative positions | Iterable objects (in 3.X).
 | `filter` | Selects items for which a function is `True` | Iterable objects (in 3.X).
