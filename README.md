@@ -125,6 +125,7 @@ A = zip(*zip(X,Y))		# unzip a zip
 <tr>
 <th> Server
 <th> IP
+	<th>
 <tr>
 <th> Server
 <th> IP
