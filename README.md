@@ -124,8 +124,7 @@ A = zip(*zip(X,Y))		# unzip a zip
 <table>
 <tr>
 <th> Server
-<th> IP
-	<th>
+<th colspan = "2"> IP
 <tr>
 <th> Server
 <th> IP
