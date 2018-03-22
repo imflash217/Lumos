@@ -121,8 +121,8 @@ A = zip(*zip(X,Y))		# unzip a zip
 	* Unicode model
 	* 3.x's mandated new-style classes
 
-|   |   | Column 1 | |
-| a | b | haha     | |
-|----
+|.|.| Column 1 |.|
+| a | b | haha |.|
+
 
 
