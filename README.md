@@ -121,6 +121,14 @@ A = zip(*zip(X,Y))		# unzip a zip
 	* Unicode model
 	* 3.x's mandated new-style classes
 
-* 
+|             |          Grouping           ||
+First Header  | Second Header | Third Header |
+ ------------ | :-----------: | -----------: |
+Content       |          *Long Cell*        ||
+Content       |   **Cell**    |         Cell |
+
+New section   |     More      |         Data |
+And more      | With an escaped '\|'         ||  
+[Prototype table]
 
 
