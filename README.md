@@ -110,7 +110,7 @@ X is Y 				# tests whether the objects(not just values) referenced by X, Y are s
 | `zip` | Combines items from iterable | Iterable objects (in 3.X).
 | `enumerate` | Pairs items in an iterable with their relative positions | Iterable objects (in 3.X).
 | `filter` | Selects items for which a function is `True` | Iterable objects (in 3.X).
-| ```python reduce``` | Runs pair of items in an iterable through a function | Iterable objects (in 3.X).
+| `reduce` | Runs pair of items in an iterable through a function | Iterable objects (in 3.X).
 
 ```python
 A = zip(*zip(X,Y))		# unzip a zip
