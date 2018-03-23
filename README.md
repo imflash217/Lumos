@@ -121,3 +121,17 @@ A = zip(*zip(X,Y))		# unzip a zip
 	* Unicode model
 	* 3.x's mandated new-style classes
 
+* Two ways to make functions:
+	* `def`
+	* `lambda`
+
+* Two ways to manage `scope` visibility:
+	* `global`
+	* `nonlocal`
+
+* Two ways to send results back to callers:
+	* `return`
+	* `yield`
+
+
+
