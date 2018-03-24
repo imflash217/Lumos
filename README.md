@@ -133,5 +133,20 @@ A = zip(*zip(X,Y))		# unzip a zip
 	* `return`
 	* `yield`
 
+* Functions behave very differently in Python than they do in compiled languages like C.
+
+* Unlike in compiled languages like C; Python `functions` do not need to be fully defined before the program runs.
+
+* `def`s are not evaluated until they are reached and run.
+
+* Code inside `def` is not evaluated until the function is called later.
+
+* Like everything else in Python, functions are just objects.
+
+* Besides calls, functions allow arbitrary attributes to be attached to record information for later use.
+
+* Local variables are removed from memory when the function call exits; and the objects they refrence may be _garbage-collected_ if not refrenced elsewhere.
+
+* Each `module` is a self contained `namespace`.
 
 
